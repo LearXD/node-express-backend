@@ -21,8 +21,13 @@ export class API {
     public async start() {
         return new Promise((resolve) => {
             this.server = express();
+
             this.init();
-            this.server.listen(this.config.port, () => resolve(this.config.port));
+
+            this.server.listen(this.config.port, () => {
+                this.running = true;
+                resolve(this.config.port)
+            });
         });
     }
 
@@ -38,4 +43,9 @@ export class API {
     public getServer() {
         return this.server;
     }
+
+    public isRunning() {
+        return this.running;
+    }
+
 }
