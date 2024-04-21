@@ -1,0 +1,35 @@
+{
+  "name": "node-express-backend",
+  "version": "0.1.0",
+  "description": "A correct way to do a Back-End",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LearXD/node-express-backend.git"
+  },
+  "keywords": [
+    "BACK-END"
+  ],
+  "author": "LearXD <contato@learxd.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LearXD/node-express-backend/issues"
+  },
+  "homepage": "https://github.com/LearXD/node-express-backend#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
